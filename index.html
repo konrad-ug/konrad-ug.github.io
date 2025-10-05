@@ -1,141 +1,123 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sołtys</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #0073e6;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        h1 {
-            margin: 0;
-            padding: 0;
-        }
-
-        .teacher-info {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .teacher-info img {
-            max-width: 200px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .consultation-info {
-            margin-bottom: 20px;
-        }
-
-        .subject {
-            margin-bottom: 20px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 20px;
-        }
-
-        .announcement {
-            margin-bottom: 20px;
-            background-color: #ffeb3b;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        .announcement h3 {
-            margin-top: 0;
-        }
-
-        .announcement p {
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-
-        hr {
-            border: 1px solid #ccc;
-            margin: 20px 0;
-        }
-
-        .bold {
-            font-weight: bold;
-        }
-    </style>
+    <title>Konrad Sołtys • UG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<body>
-    <header>
-        <h1>Konrad Sołtys UG 2024/2025</h1>
+<body class="min-h-screen bg-slate-50 font-sans text-slate-900">
+    <header class="bg-gradient-to-r from-sky-700 via-sky-600 to-blue-600 text-white shadow-lg">
+        <div class="mx-auto flex max-w-5xl flex-col gap-10 px-4 pb-16 pt-12 md:px-8">
+            <div class="flex flex-col gap-8 md:flex-row md:items-center md:gap-12">
+                <div class="flex justify-center md:justify-start">
+                    <figure class="group relative w-24 shrink-0 overflow-hidden rounded-3xl border border-white/40 bg-white/10 p-1 shadow-lg backdrop-blur-sm md:w-36">
+                        <span class="pointer-events-none absolute inset-0 rounded-3xl border border-white/30 opacity-0 transition group-hover:opacity-100"></span>
+                        <img src="profil.jpg" alt="Portret Konrada Sołtysa" class="h-full w-full rounded-2xl object-cover" loading="lazy">
+                    </figure>
+                </div>
+                <div class="max-w-3xl text-left">
+                    <p class="text-sm font-semibold uppercase tracking-widest text-sky-100">Uniwersytet Gdański • Semestr zimowy 2025/2026</p>
+                    <h1 class="mt-2 text-4xl font-bold tracking-tight md:text-5xl">Konrad Sołtys</h1>
+                    <p class="mt-4 text-lg text-sky-100/80">Materiały, ogłoszenia i informacje organizacyjne dla studentów prowadzonych przeze mnie kursów.</p>
+                </div>
+            </div>
+            <nav class="flex flex-wrap gap-3 text-sm font-semibold">
+                <a href="index.html" aria-current="page" class="rounded-full bg-white/20 px-4 py-2 transition hover:bg-white/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Strona główna</a>
+                <a href="testowanie-automatyczne.html" class="rounded-full bg-white/10 px-4 py-2 transition hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Testowanie automatyczne</a>
+                <a href="projekt-zespolowy.html" class="rounded-full bg-white/10 px-4 py-2 transition hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Projekt zespołowy</a>
+            </nav>
+        </div>
     </header>
-    <div class="teacher-info">
-        <div class="announcement">
-            <h3><span class="icon">&#128266;</span> Ogłoszenia:</h3>
-            <p>
-                Zajęcia 11.03 oraz 12.03 z powodów zdrowotnych nie odbędą się!
-            </p>
-            <p>
-                Technologie chmurowe stepik - <a
-                    href="https://stepik.org/join-class/21b8fa418e9e58443182eee95764d149f0e7409e">dołącz do stepika</a>
-            </p>
-            <p>
-                Pierwsze zajęcia z Technologii chmurowych odbędą się zgodnie z planem 27.02, o godzinie 10:00 w formie
-                zdalnej.
-            </p>
-            <p>
-                Zajęcia "Bezpieczeństwo aplikacji webowych" rozpoczynają się od drugiego tygodnia semestru (od 04.03)!
-            </p>
-            <p>
-                Godziny rozpoczęcia zajęć z przedmiotu "Bezpieczeństwo aplikacji webowych":<br>
-                - gr. 2: wtorki 12:30<br>
-                - gr. 5: wtorki 14:10<br>
-                - gr. 3: środy 12:30<br>
-                - gr. 4: środy 15:45
-            </p>
-        </div>
-        <hr>
-        <div class="consultation-info">
-            <h3><span class="icon">&#9201;</span> Konsultacje:</h3>
-            <p>Środa: <span class="bold">14:00 - 16:00</span></p>
-            <p>Sala: <span class="bold">3.10</span></p>
-        </div>
-        <hr>
-        <h3><span class="icon">&#128218;</span>Prowadzone przedmioty, semestr letni 2025</h3>
-        <h4 class="bold">Technologie chmurowe</h4>
-        <h4 class="bold">Bezpieczeństwo aplikacji webowych</h4>
-        <p>MS Teams channel: <a
-                href="https://teams.microsoft.com/l/channel/19%3Aew_aay5N0cAGttu8I2ZW2Y_aAAJOg_-EO6i2EQlPVck1%40thread.tacv2/?groupId=812676bb-f245-430d-9e3d-0e6b623ab641">link</a>
-        </p>
-        <p>
-            <a href="https://drive.google.com/file/d/1OJ-y_ALeUrW5UfT09gy4OcgRvQymKyaD/view?usp=sharing">lab1</a>
-            <a href="https://drive.google.com/file/d/1Olcn_7rGA9uD_JQQceX0Ev_opCuhaoji/view?usp=sharing">lab2</a>
-            <a href="https://drive.google.com/file/d/1z1u5c92Vn3_Sv-TYMjBsu5MoeqiTHddV/view?usp=sharing">lab3</a>
-            <a href="https://drive.google.com/file/d/1sfH1BCoJ6Xq0djAwGXgEKiTb7ACgN-SO/view?usp=sharing">lab4</a>
-            <a href="https://drive.google.com/file/d/1ZszDjFmVYW03sgahYoKZ8Nw_v9XhGaB4/view?usp=drive_link">lab5</a>
-            <a href="https://drive.google.com/file/d/1_0lZlBQ0I-D9ax5U09pdJiRKtl-baNLm/view?usp=sharing">lab6</a>
 
-        </p>
-        <hr>
+    <main class="mx-auto flex max-w-5xl flex-col gap-12 px-4 py-16 md:px-8">
+        <section class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+            <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                <h2 class="text-2xl font-semibold text-slate-900">Aktualne ogłoszenia</h2>
+                <span class="inline-flex items-center gap-2 rounded-full bg-sky-100 px-3 py-1 text-sm font-medium text-sky-800">
+                    <span aria-hidden="true">&#128227;</span> Na bieżąco
+                </span>
+            </div>
+            <div class="mt-6 space-y-4">
+                <article class="rounded-2xl border border-sky-100 bg-sky-50/80 p-6">
+                    <h3 class="text-lg font-semibold text-sky-900">11–12 marca: zajęcia odwołane</h3>
+                    <p class="mt-2 leading-7 text-slate-700">Zajęcia zaplanowane na 11.03 oraz 12.03 z powodów zdrowotnych nie odbędą się. Nowe terminy zostaną przekazane poprzez kanały MS Teams.</p>
+                </article>
+            </div>
+        </section>
 
-    </div>
+        <section class="grid gap-6 md:grid-cols-2">
+            <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+                <h2 class="text-2xl font-semibold text-slate-900">Konsultacje</h2>
+                <p class="mt-4 text-sm font-semibold uppercase tracking-widest text-slate-500">Wtorki</p>
+                <p class="mt-1 text-3xl font-bold text-slate-900">12:30 – 14:30</p>
+                <p class="mt-4 text-slate-600">Sala 3.10, Wydział Matematyki, Fizyki i Informatyki UG. Najszybszy kontakt poza konsultacjami: wiadomość na MS Teams.</p>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+                <h2 class="text-2xl font-semibold text-slate-900">Krótko o współpracy</h2>
+                <ul class="mt-4 space-y-3 text-slate-600">
+                    <li class="flex items-start gap-3"><span class="mt-1 text-lg" aria-hidden="true">&#128172;</span><span>Ogłoszenia dotyczące zajęć pojawiają się równolegle na stronie i w kanałach przedmiotowych MS Teams.</span></li>
+                    <li class="flex items-start gap-3"><span class="mt-1 text-lg" aria-hidden="true">&#9989;</span><span>Materiały do laboratoriów i nagrania udostępniam po każdych zajęciach w dedykowanych sekcjach kursów.</span></li>
+                    <li class="flex items-start gap-3"><span class="mt-1 text-lg" aria-hidden="true">&#9200;&#65039;</span><span>Proszę o wcześniejszą wiadomość, jeśli planujesz zdalną konsultację w innym terminie.</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+            <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                <div>
+                    <h2 class="text-2xl font-semibold text-slate-900">Prowadzone przedmioty</h2>
+                    <p class="mt-2 text-slate-600">Szczegółowe informacje, materiały oraz komunikaty znajdziesz na stronach kursów.</p>
+                </div>
+            </div>
+            <div class="mt-8 grid gap-6 md:grid-cols-2">
+                <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-slate-50/80 p-6">
+                    <div class="space-y-3">
+                        <h3 class="text-xl font-semibold text-slate-900">Testowanie automatyczne</h3>
+                        <p class="text-slate-600">Laboratoria poświęcone praktykom automatyzacji testów i jakości oprogramowania.</p>
+                        <dl class="space-y-2 text-sm">
+                            <div class="flex items-center justify-between">
+                                <dt class="text-slate-500">Wtorek</dt>
+                                <dd class="font-medium text-slate-800">14:00–16:00 • gr. 3 • sala 3.05</dd>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <dt class="text-slate-500">Środa</dt>
+                                <dd class="font-medium text-slate-800">14:00–16:00 • gr. 4 (od 8 X)</dd>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <dt class="text-slate-500">Czwartek</dt>
+                                <dd class="font-medium text-slate-800">12:00–14:00 • gr. 2 • sala 3.11</dd>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <dt class="text-slate-500">Czwartek</dt>
+                                <dd class="font-medium text-slate-800">14:00–16:00 • gr. 1</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <a href="testowanie-automatyczne.html" class="mt-6 inline-flex items-center justify-center rounded-full bg-sky-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-sky-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500">Przejdź do strony kursu</a>
+                </article>
+                <article class="flex h-full flex-col justify-between rounded-2xl border border-slate-200 bg-slate-50/80 p-6">
+                    <div class="space-y-3">
+                        <h3 class="text-xl font-semibold text-slate-900">Projekt zespołowy</h3>
+                        <p class="text-slate-600">Warsztatowa praca projektowa z naciskiem na współpracę i komunikację w zespołach programistycznych.</p>
+                        <dl class="space-y-2 text-sm">
+                            <div class="flex items-center justify-between">
+                                <dt class="text-slate-500">Czwartek</dt>
+                                <dd class="font-medium text-slate-800">16:00–18:00 • gr. 5 • sala 3.11</dd>
+                            </div>
+                        </dl>
+                    </div>
+                    <a href="projekt-zespolowy.html" class="mt-6 inline-flex items-center justify-center rounded-full bg-violet-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-violet-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-500">Przejdź do strony kursu</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white/80">
+        <div class="mx-auto flex max-w-5xl flex-col gap-4 px-4 py-8 text-sm text-slate-500 md:px-8 md:flex-row md:items-center md:justify-between">
+            <p>© 2025 Konrad Sołtys. Wszelkie prawa zastrzeżone.</p>
+            <p>Aktualizacje ogłaszane są także na kanałach MS Teams poszczególnych kursów.</p>
+        </div>
+    </footer>
 </body>
-
 </html>
